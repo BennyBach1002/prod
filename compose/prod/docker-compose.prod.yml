@@ -5,7 +5,7 @@ services:
     # Use the custom NGINX build from the monitoring folder
     build:
       context: ../../
-      dockerfile: ci/Dockerfile.backend
+      dockerfile: ci/Dockerfile.nginx
     ports:
       # Only expose port 80 to the host, as NGINX will route all traffic
       - "80:80"
